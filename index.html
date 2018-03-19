@@ -9,6 +9,20 @@
 <body>
   <div id="main-content">
     <h1>Flatiron Task Lister</h1>
+      <form id="create-list-form" action="#" method="post">
+        <label for="create-list-title">Add a new list:</label>
+        <input type="text" id="new-list-title" name="new-list-title" placeholder="title">
+        <input type="submit" value="Create New List" id="create-list-button">
+      </form>
+      <form id="create-task-form" action="#" method="post" style="display: none">
+        <label for="parent-list">Select List:</label>
+        <select id="parent-list" name="parent-list"></select>
+        <label for="new-task-description">Description:</label>
+        <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
+        <label for="new-task-priority">Priority Level:</label>
+        <input type="text" id="new-task-priority" name="new-task-priority" placeholder="priority">
+        <input type="submit" value="Create New Task">
+      </form>
 
     <div id="lists"></div>
 
